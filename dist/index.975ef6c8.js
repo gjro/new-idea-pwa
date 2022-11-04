@@ -27223,29 +27223,29 @@ const Idea = ({ idea , onDelete  })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("d
         className: "app__content__idea",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "app_content__idea__text",
+                className: "app__content__idea__text",
                 children: idea.content
             }, void 0, false, {
                 fileName: "src/components/Idea.jsx",
                 lineNumber: 5,
-                columnNumber: 9
+                columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                 type: "button",
-                className: "app__btn app__content__idea_btn",
-                id: "{idea.id}",
+                className: "app__btn app__content__idea__btn",
+                id: idea.id,
                 onClick: onDelete,
-                children: " - "
+                children: "–"
             }, void 0, false, {
                 fileName: "src/components/Idea.jsx",
                 lineNumber: 6,
-                columnNumber: 9
+                columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Idea.jsx",
         lineNumber: 4,
-        columnNumber: 5
+        columnNumber: 3
     }, undefined);
 _c = Idea;
 exports.default = Idea;
@@ -27478,20 +27478,7 @@ const FirebaseContext = /*#__PURE__*/ (0, _react.createContext)(null);
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","./config":"7nU9T","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","firebase/compat/app":"2iVaZ","firebase/compat/firestore":"io2Wn"}],"7nU9T":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "firebaseConfig", ()=>firebaseConfig);
-const firebaseConfig = {
-    apiKey: "AIzaSyABjZ6601iOO_k4duwSNp_noXXgMXq9-lQ",
-    authDomain: "new-idea-pwa.firebaseapp.com",
-    projectId: "new-idea-pwa",
-    storageBucket: "new-idea-pwa.appspot.com",
-    messagingSenderId: "142821881732",
-    appId: "1:142821881732:web:397476334ba6b00bec8fd1"
-};
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2iVaZ":[function(require,module,exports) {
+},{"react":"21dqq","firebase/compat/app":"2iVaZ","firebase/compat/firestore":"io2Wn","./config":"7nU9T","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2iVaZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>(0, _appCompatDefault.default));
@@ -52451,6 +52438,19 @@ var Stat = esm.Stat = {
 var FetchXmlHttpFactory = esm.FetchXmlHttpFactory = ed;
 var WebChannel = esm.WebChannel = Ub;
 var XhrIo = esm.XhrIo = W;
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7nU9T":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "firebaseConfig", ()=>firebaseConfig);
+const firebaseConfig = {
+    apiKey: "AIzaSyABjZ6601iOO_k4duwSNp_noXXgMXq9-lQ",
+    authDomain: "new-idea-pwa.firebaseapp.com",
+    projectId: "new-idea-pwa",
+    storageBucket: "new-idea-pwa.appspot.com",
+    messagingSenderId: "142821881732",
+    appId: "1:142821881732:web:397476334ba6b00bec8fd1"
+};
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"94Idc":[function() {},{}]},["1xC6H","ShInH","8lqZg"], "8lqZg", "parcelRequire556e")
 
