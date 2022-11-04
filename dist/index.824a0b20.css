@@ -1,0 +1,176 @@
+:root {
+  --danger-red: #f5222d;
+  --success-green: #39c16c;
+  --default-dark: #e2e2e2;
+  --default-white: #fff;
+  --secondary-white: #f4f4f4;
+  --constant-white: #fff;
+  --text-color: #000;
+}
+
+.app__content__idea {
+  background-color: var(--default-white);
+  color: var(--text-color);
+  min-height: fit-content;
+  width: 100%;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5em 0;
+  padding: .8em 1em;
+  display: flex;
+  overflow: hidden;
+}
+
+.app__content__idea__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.app__content__idea__btn {
+  justify-self: flex-end;
+  margin-left: 1em;
+  color: var(--danger-red) !important;
+  background-color: #0000 !important;
+}
+
+.app__content__idea__btn:hover {
+  color: var(--constant-white) !important;
+  background-color: var(--danger-red) !important;
+}
+
+@import "https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600&display=swap";
+
+:root {
+  --danger-red: #f5222d;
+  --success-green: #39c16c;
+  --default-dark: #e2e2e2;
+  --default-white: #fff;
+  --secondary-white: #f4f4f4;
+  --constant-white: #fff;
+  --text-color: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: var(--secondary-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  font-family: Nunito Sans, sans-serif, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+.theme-toggle {
+  color: #000 !important;
+  background-color: #0000 !important;
+}
+
+.app {
+  height: 100%;
+  grid-template-rows: minmax(75px, 80px) 75% minmax(10%, auto);
+  grid-template-areas: "header"
+                       "content"
+                       "footer";
+  display: grid;
+}
+
+.app__btn {
+  height: 40px;
+  min-width: 40px;
+  background-color: var(--default-white);
+  color: var(--default-white);
+  cursor: pointer;
+  border-style: none;
+  border-radius: 5px;
+  padding: .5em;
+  font-size: 1em;
+  font-weight: bolder;
+  transition: background-color .2s;
+}
+
+.app__header {
+  width: 100%;
+  background-color: var(--default-white);
+  grid-area: header;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5em 1em;
+  display: flex;
+}
+
+.app__header__h1 {
+  color: var(--text-color);
+  text-transform: lowercase;
+  text-align: center;
+  height: fit-content;
+  margin: 0;
+}
+
+.app__content {
+  width: 50%;
+  max-width: 600px;
+  flex-direction: column;
+  grid-area: content;
+  justify-self: center;
+  align-items: center;
+  padding: .5em 0;
+  display: flex;
+  overflow-y: scroll;
+}
+
+.app__content__no-idea {
+  color: #999;
+  align-self: center;
+  margin: auto;
+  font-size: 2em;
+}
+
+.app__footer {
+  background-color: var(--default-dark);
+  width: 100%;
+  grid-area: footer;
+  justify-content: center;
+  justify-self: center;
+  align-items: center;
+  padding: 1em;
+  display: flex;
+}
+
+.app__footer__input {
+  width: 50%;
+  max-width: 500px;
+  border-style: none;
+  border-radius: 8px;
+  margin-right: .5em;
+  padding: 1em;
+  font-size: 1em;
+}
+
+.app__footer__submit-btn {
+  color: var(--constant-white);
+  background-color: var(--success-green);
+}
+
+.app__footer__submit-btn:hover {
+  color: var(--success-green);
+  background-color: var(--constant-white);
+}
+
+@media only screen and (max-width: 768px) {
+  .app__content {
+    width: 80%;
+  }
+
+  .app__footer__input {
+    width: 75%;
+  }
+}
+
+/*# sourceMappingURL=index.824a0b20.css.map */
